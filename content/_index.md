@@ -2,7 +2,7 @@
 title: Foojank
 layout: hextra-home
 ---
-{{< hextra/hero-container image="/images/v-tour/regolith-empty.png" imageTitle="foojank" imageWidth="650" >}}
+{{< hextra/hero-container image="/images/cmddemo.png" imageTitle="foojank" imageWidth="650" >}}
 <div class="hx-mt-6 hx-mb-6">
 {{< hextra/hero-headline >}}
 Foojank
@@ -11,7 +11,7 @@ Foojank
 
 <div class="hx-mt-6 hx-mb-6">
 {{< hextra/hero-subtitle >}}
-Cross-platform command & control framework
+Cross-platform command and control framework written in Go
 {{< /hextra/hero-subtitle >}}
 </div>
 
@@ -20,6 +20,7 @@ Cross-platform command & control framework
 </div>
 {{< /hextra/hero-container >}}
 
+<!--
 {{< hextra/hero-section >}}
 Showcase
 {{< /hextra/hero-section >}}
@@ -27,32 +28,23 @@ Showcase
 {{< hextra/feature-grid >}}
     {{< hextra/feature-card
     title="Scripting Engine"
-    subtitle="Execute custom scripts using a builtin scripting engine."
-    class="hx:aspect-auto hx:md:aspect-[1.1/1] hx:max-md:min-h-[340px]"
-    image="images/hextra-doc.webp"
+    subtitle="Execute scripts in runtime using a builtin scripting engine."
     >}}
     {{< hextra/feature-card
     title="Virtual Filesystems"
     subtitle="Create virtual file systems utilizing different protocols to enable frictionless lateral movement."
-    class="hx:aspect-auto hx:md:aspect-[1.1/1] hx:max-lg:min-h-[340px]"
-    image="images/hextra-markdown.webp"
     >}}
     {{< hextra/feature-card
     title="Scripts"
-    subtitle="Write custom scripts to expand your offensive toolset."
-    class="hx:aspect-auto hx:md:aspect-[1.1/1] hx:max-md:min-h-[340px]"
-    image="images/hextra-search.webp"
+    subtitle="Create custom scripts to expand your offensive toolset."
     >}}
     {{< hextra/feature-card
     title="Modules"
-    subtitle="Extend existing capabilities of the scripting engine by adding custom modules."
-    class="hx:aspect-auto hx:md:aspect-[1.1/1] hx:max-md:min-h-[340px]"
-    image="images/hextra-search.webp"
+    subtitle="Extend capabilities of the scripting engine with custom modules."
     >}}
     {{< hextra/feature-card
     title="Object Store"
-    subtitle="Exchange files between systems seamlessly."
-    class="hx:aspect-auto hx:md:aspect-[1.1/1] hx:max-md:min-h-[340px]"
-    image="images/hextra-search.webp"
+    subtitle="Seamlessly exchange files between hosts."
     >}}
 {{< /hextra/feature-grid >}}
+-->

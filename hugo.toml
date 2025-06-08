@@ -17,12 +17,11 @@ path = 'github.com/imfing/hextra'
 
 [menu]
 main = [
-    { name = 'Install', pageRef = '/install', weight = 1 },
+    { name = 'Install', pageRef = '/docs/install', weight = 1 },
     { name = 'Documentation', pageRef = '/docs', weight = 2 },
-    { name = 'GitHub', pageRef = '/github', params = { icon = 'github' }, weight = 3 },
+    { name = 'GitHub', url = 'https://github.com/fooHQ/foojank', params = { icon = 'github' }, weight = 3 },
 ]
 sidebar = [
     { name = 'Resources', params = { type = 'separator' }, weight = 1 },
     { name = 'Support', pageRef = '/support', weight = 2 },
-    { name = 'GitHub', pageRef = '/github', weight = 3 }
 ]
