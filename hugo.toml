@@ -23,7 +23,8 @@ dir = ':cacheDir/images'
 main = [
     { name = 'Install', pageRef = '/docs/install', weight = 1 },
     { name = 'Documentation', pageRef = '/docs', weight = 2 },
-    { name = 'GitHub', url = 'https://github.com/fooHQ/foojank', params = { icon = 'github' }, weight = 3 },
+    { name = 'Search', params = { type = 'search' }, weight = 3 },
+    { name = 'GitHub', url = 'https://github.com/fooHQ/foojank', params = { icon = 'github' }, weight = 4 },
 ]
 sidebar = [
     { name = 'Resources', params = { type = 'separator' }, weight = 1 },
