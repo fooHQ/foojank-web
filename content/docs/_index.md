@@ -25,6 +25,13 @@ Foojank uses [NATS](https://nats.io) as its C2 server for robust, scalable, and 
 
 - **Self-Contained Dependencies**: Foojank manages dependencies with [Devbox](https://www.jetify.com/devbox), using Nix to version dependencies. This allows multiple software versions to coexist without conflicts or OS modifications.
 
+## Compatibility
+
+|        | Linux | Windows | macOS |
+|:-------|:-----:|:-------:|:-----:|
+| Agent  |  yes  |   yes   |  yes  |
+| Server |  yes  |   no    |  yes  |
+| Client |  yes  |   no    |  yes  |
 
 ## License
 
