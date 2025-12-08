@@ -1,13 +1,16 @@
 {
-  "$schema":  "https://raw.githubusercontent.com/jetify-com/devbox/0.13.6/.schema/devbox.schema.json",
-  "packages": ["hugo@latest"],
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.13.6/.schema/devbox.schema.json",
+  "packages": [
+    "hugo@latest",
+    "pandoc@latest"
+  ],
   "shell": {
     "init_hook": [
       "echo 'Welcome to devbox!' > /dev/null"
     ],
     "scripts": {
-      "docs": [
-        "hugo serve"
+      "build": [
+        "pandoc -o index.html --template index.html.in index.md"
       ]
     }
   }

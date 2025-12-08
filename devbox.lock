@@ -1,6 +1,10 @@
 {
   "lockfile_version": "1",
   "packages": {
+    "github:NixOS/nixpkgs/nixpkgs-unstable": {
+      "last_modified": "2025-12-05T15:03:55Z",
+      "resolved": "github:NixOS/nixpkgs/a672be65651c80d3f592a89b3945466584a22069?lastModified=1764947035&narHash=sha256-EYHSjVM4Ox4lvCXUMiKKs2vETUSL5mx%2BJ2FfutM7T9w%3D"
+    },
     "hugo@latest": {
       "last_modified": "2025-03-11T17:52:14Z",
       "resolved": "github:NixOS/nixpkgs/0d534853a55b5d02a4ababa1d71921ce8f0aee4c#hugo",
@@ -46,6 +50,54 @@
             }
           ],
           "store_path": "/nix/store/83ly2ys92z0bgxrbg9gxq785ypwc13qc-hugo-0.145.0"
+        }
+      }
+    },
+    "pandoc@latest": {
+      "last_modified": "2025-11-23T21:50:36Z",
+      "resolved": "github:NixOS/nixpkgs/ee09932cedcef15aaf476f9343d1dea2cb77e261#pandoc",
+      "source": "devbox-search",
+      "version": "3.7.0.2",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/83hx2pfbqk01hil6a2av5la7001gs5gk-pandoc-cli-3.7.0.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/83hx2pfbqk01hil6a2av5la7001gs5gk-pandoc-cli-3.7.0.2"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/qyykaxf01x2jd4zaxhwp9kw59c51nh6f-pandoc-cli-3.7.0.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/qyykaxf01x2jd4zaxhwp9kw59c51nh6f-pandoc-cli-3.7.0.2"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/rvyfavdx62l3vc6mglq7z3lf2xkplfva-pandoc-cli-3.7.0.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/rvyfavdx62l3vc6mglq7z3lf2xkplfva-pandoc-cli-3.7.0.2"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/l7y16c61s2brssgfm6qsvcrr4jdd7j5m-pandoc-cli-3.7.0.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/l7y16c61s2brssgfm6qsvcrr4jdd7j5m-pandoc-cli-3.7.0.2"
         }
       }
     }
