@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Foojank | C2 Framework</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+          content="Foojank is a modern command and control (C2) framework. Documentation, installation, and configuration guides.">
+    <link rel="canonical" href="https://foojank.com/">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="alternate icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <style>
+        html {
+            color-scheme: dark light;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        figure {
+            margin: 0;
+        }
+
+        figcaption {
+            text-align: center;
+            margin-top: 1.25rem;
+            margin-bottom: 0;
+            font-size: 1rem;
+        }
+
+        body {
+            max-width: min(70ch, 100% - 4rem);
+            margin-inline: auto;
+            font-family: system-ui;
+            font-size: 1.25rem;
+            line-height: 1.5;
+        }
+
+        pre {
+            font-size: 1rem;
+            background-color: #656565;
+            border-radius: 20px;
+            padding: 1.25rem;
+        }
+    </style>
+</head>
+<body>
+    $body$
+</body>
+</html>
