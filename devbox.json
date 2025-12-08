@@ -9,7 +9,7 @@
     ],
     "scripts": {
       "build": [
-        "pandoc -o index.html --template index.html.in index.md"
+        "pandoc -o static/index.html --template index.html.in index.md"
       ]
     }
   }
