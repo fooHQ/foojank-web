@@ -40,14 +40,31 @@
         }
 
         pre {
-            font-size: 1rem;
             background-color: #656565;
             border-radius: 20px;
             padding: 1.25rem;
+            overflow-x: auto;
+        }
+
+        code {
+            font-size: 0.95rem;
+        }
+
+        footer {
+            margin-top:2rem;
+            font-size: 0.95rem;
+            text-align: center;
         }
     </style>
 </head>
 <body>
+    <main>
     $body$
+    </main>
+    <footer>
+        <code>EOF</code>
+        <br>
+        &copy; 2024-2026 <a href="https://foohq.io">fooHQ</a>
+    </footer>
 </body>
 </html>
