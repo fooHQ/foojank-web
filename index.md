@@ -1,8 +1,6 @@
 # Foojank
 
-Foojank is a prototype of a command and control framework written in Go.
-
-Foojank uses NATS as a command-and-control server. NATS is a widely used message broker in IoT and cloud systems to facilitate communication between geographically distributed services. NATS allows passing messages between connected services and offers a persistence layer known as JetStream, enabling it to store messages on the server even when the receiver is offline. Additionally, NATS provides an object store that can be utilized for storing files.
+Foojank is a prototype command-and-control (C2) framework that uses [NATS](https://nats.io) for C2 communications.
 
 Foojank leverages the NATS features to offer:
 
@@ -98,8 +96,8 @@ $ openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout private.key -out c
 Copy the certificate and private key to any directory and make sure they are readable by the `nats` user:
 
 ```
-# cp certificate.crt private.key /etc/nats/
-# chown nats:nats /etc/nats/certificate.crt /etc/nats/private.key
+# cp certificate.crt private.key /opt/nats/
+# chown nats:nats /etc/nats/certificate.crt /opt/nats/private.key
 ```
 
 Edit the server configuration to use the certificate and the key. TLS should be enabled for both the TCP and the WebSocket ports:
@@ -114,7 +112,7 @@ tls {
 Restart the server to apply the changes:
 
 ```
-$ systemctl restart nats-server
+# systemctl restart nats-server
 ```
 
 ## Support
