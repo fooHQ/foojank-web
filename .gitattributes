@@ -4,3 +4,4 @@ static/images/android-chrome-192x192.png filter=lfs diff=lfs merge=lfs -text
 static/images/android-chrome-512x512.png filter=lfs diff=lfs merge=lfs -text
 static/images/apple-touch-icon.png filter=lfs diff=lfs merge=lfs -text
 static/images/favicon-16x16.png filter=lfs diff=lfs merge=lfs -text
+static/images/favicon.ico filter=lfs diff=lfs merge=lfs -text
