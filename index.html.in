@@ -7,6 +7,7 @@
     <meta name="description"
           content="Foojank is a prototype command-and-control (C2) framework.">
     <link rel="canonical" href="https://foojank.com/">
+    <link rel="mask-icon" href="/images/fu.svg" color="#FE0000">
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
@@ -53,18 +54,44 @@
 
         footer {
             margin-top:2rem;
+            margin-bottom:2rem;
             font-size: 0.95rem;
-            text-align: center;
+        }
+
+        .title {
+            padding:0;
+            display: flex;
+            align-items: center;
+            gap: 1.20rem;
+        }
+
+        .logo {
+            padding:0;
+            object-fit: contain;
+            flex-shrink: 0;
+            width:3.85rem;
+            color: #FE0000;
+        }
+
+        a {
+            color: #3B82F6;
+        }
+
+        a:hover {
+            color: #60A5FA;
         }
     </style>
 </head>
 <body>
+    <h1 class="title">
+        <img src="/images/fu.svg" alt="Logo" class="logo">
+        <span>Foojank</span>
+    </h1>
+
     <main>
     $body$
     </main>
     <footer>
-        <code>EOF</code>
-        <br>
         &copy; 2024-2026 <a href="https://foohq.io">fooHQ</a>
     </footer>
 </body>
