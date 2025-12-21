@@ -42,7 +42,8 @@
         }
 
         pre {
-            background-color: #656565;
+            background-color: #1F2937;
+            color: #E5E7EB;
             border-radius: 20px;
             padding: 1.25rem;
             overflow-x: auto;
