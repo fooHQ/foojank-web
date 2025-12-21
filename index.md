@@ -1,5 +1,3 @@
-# Foojank
-
 Foojank is a prototype command-and-control (C2) framework that uses [NATS](https://nats.io) for C2 communications.
 
 NATS is a widely used message broker in IoT and cloud systems to facilitate communication between geographically distributed services. NATS allows passing messages between connected services and offers a persistence layer known as JetStream, enabling it to store messages on the server even when the receiver is offline. Additionally, NATS provides an object store that can be utilized for storing files.
