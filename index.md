@@ -125,9 +125,9 @@ The installation script is going to install:
 * The latest version of [Devbox](https://www.jetify.com/devbox).
 
 Devbox is used to manage dependencies and to interact with Agent development environments.
-Devbox uses Nix package manager. All dependencies are installed in the Nix store and do
-not conflict with already installed software. Multiple versions of the same dependency can be installed as well.
-**Unfortunately, Nix package manager does not support Windows at this time, which makes the client incompatible with Windows.**
+Devbox is built with the Nix package manager which installs packages in the Nix store. Installed Nix packages do
+not conflict with already installed software, and multiple versions of the same package can be installed at the same time.
+**Unfortunately, Nix is not compatible with Windows at this time, which makes the client incompatible with Windows as well.**
 
 Once the installation is complete, run `foojank` to start the client:
 
@@ -154,6 +154,44 @@ GLOBAL OPTIONS:
    --no-color     disable color output
    --help, -h     show help
    --version, -v  print the version
+```
+
+## Client Configuration
+
+Foojank configuration is managed using the `foojank config` command. To create an initial configuration, run:
+
+```
+$ foojank config init
+```
+
+The command will create a hidden configuration directory `.foojank` in the current directory. The directory contains JSON configuration files.
+The files should not be modified manually. Instead, use the `foojank config edit` command to edit the configuration.
+
+For instance, the following command will set the server URL to `nats://127.0.0.1`:
+
+```
+$ foojank config edit --set server_url=nats://127.0.0.1
+```
+
+To unset a configuration option, use the `--unset` flag:
+
+```
+$ foojank config edit --unset server_url
+```
+
+To view all available configuration options and their values, run:
+
+```
+$ foojank config list
+┌────────────────────┬──────────────────┬───────────────────────────────────┐
+│       OPTION       │      VALUE       │            DESCRIPTION            │
+├────────────────────┼──────────────────┼───────────────────────────────────┤
+│ server_url         │ nats://127.0.0.1 │ Server URL                        │
+│ server_certificate │                  │ Path to server's certificate      │
+│ account            │                  │ Account for server authentication │
+│ format             │ table            │ Output format: table or json      │
+│ no_color           │ false            │ Color output                      │
+└────────────────────┴──────────────────┴───────────────────────────────────┘
 ```
 
 ## Support
