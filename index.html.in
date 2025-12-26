@@ -17,6 +17,31 @@
             color-scheme: dark light;
         }
 
+        body {
+            max-width: min(70ch, 100% - 4rem);
+            margin-inline: auto;
+            font-family: system-ui;
+            font-size: 1.25rem;
+            line-height: 1.5;
+        }
+
+        h2 {
+            counter-increment: h2counter;
+            counter-reset: h3counter;
+        }
+
+        h3 {
+            counter-increment: h3counter;
+        }
+
+        h2:before{
+            content: counter(h2counter) ".\00a0\00a0";
+        }
+
+        h3:before{
+            content: counter(h2counter) "." counter(h3counter) "\00a0\00a0";
+        }
+
         img {
             max-width: 100%;
             display: block;
@@ -31,14 +56,6 @@
             margin-top: 1.25rem;
             margin-bottom: 0;
             font-size: 1rem;
-        }
-
-        body {
-            max-width: min(70ch, 100% - 4rem);
-            margin-inline: auto;
-            font-family: system-ui;
-            font-size: 1.25rem;
-            line-height: 1.5;
         }
 
         pre {
