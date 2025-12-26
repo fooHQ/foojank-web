@@ -31,8 +31,9 @@ The installation script expects an environment running Systemd, and as such it w
 
 ## Server Configuration
 
-This chapter assumes the installation was performed using the provided installation script.
-Installation methods that are not compatible with the installation script may require additional steps that are outside the scope of this guide. Refer to NATS documentation for in-depth information about server configuration.
+This chapter assumes that the installation has been done using the installation script.
+Installation methods that are not compatible with the installation script may require additional steps that are not documented here.
+Refer to [NATS documentation](https://docs.nats.io/running-a-nats-service/configuration) for in-depth information about server configuration.
 
 Quick facts about the default configuration:
 
@@ -43,7 +44,7 @@ Quick facts about the default configuration:
 
 ### Authentication
 
-JWT-based authentication/authorization uses a hierarchy of entities to establish a chain of trust. Each entity is represented by a JWT and a cryptographic key pair used for signing.
+NATS server uses JWT-based authentication and authorization. JWT-based authentication/authorization uses a hierarchy of entities to establish a chain of trust. Each entity is represented by a JWT and a cryptographic key pair used to create signatures or verify them.
 
 * **Operators** are responsible for running NATS servers. Operators set limits on what Accounts can do and are responsible for issuing Account JWTs.
 
@@ -158,14 +159,14 @@ GLOBAL OPTIONS:
 
 ## Client Configuration
 
-Foojank configuration is managed using the `foojank config` command. To create an initial configuration, run:
+Foojank configuration is managed using the `config` command. To create an initial configuration, run:
 
 ```
 $ foojank config init
 ```
 
-The command will create a hidden configuration directory `.foojank` in the current directory. The directory contains JSON configuration files.
-The files should not be modified manually. Instead, use the `foojank config edit` command to edit the configuration.
+The command will create a hidden directory `.foojank` in the current directory. The directory contains JSON configuration files.
+The files should not be modified manually. Instead, use the `config edit` command.
 
 For instance, the following command will set the server URL to `nats://127.0.0.1`:
 
