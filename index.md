@@ -1,18 +1,12 @@
-Foojank is a prototype command-and-control (C2) framework that uses [NATS](https://nats.io) for C2 communications.
-
-NATS is a widely used message broker in IoT and cloud systems to facilitate communication between geographically distributed services. NATS allows passing messages between connected services and offers a persistence layer known as JetStream, enabling it to store messages on the server even when the receiver is offline. Additionally, NATS provides an object store that can be utilized for storing files.
+Foojank is a command-and-control (C2) framework that uses [NATS](https://nats.io) for C2 communications.
 
 Foojank leverages the NATS features to offer:
 
-* Asynchronous or real-time communication with Agents over TCP or WebSockets.
+* Synchronous or asynchronous communication with Agents over TCP or WebSockets.
 * Server-based storage for file sharing and data exfiltration.
 * JWT-based authentication and authorization.
 * Full observability.
 * Extensibility.
-
-Foojank is currently compatible only with our prototype agent, [Vessel](https://github.com/foohq/vessel). However, we plan to implement support for integrating custom agents into the framework in the future.
-
-### License
 
 Foojank is distributed under the [Apache License Version 2.0](https://github.com/fooHQ/foojank/blob/main/LICENSE).
 
@@ -24,15 +18,15 @@ The simplest way to install the server is to run the installation script:
 $ curl -fsSL https://github.com/fooHQ/foojank/releases/latest/download/server.sh | sh
 ```
 
-The installation script is going to:
+The installation script is going to install:
 
-* Install the latest NATS server.
-* Install nsc utility.
-* Install default configuration.
+* The latest [nats-server](https://github.com/nats-io/nats-server).
+* The default nats-server configuration.
+* The latest [nsc](https://github.com/nats-io/nsc) utility.
 
 The installation script is not going to generate a TLS certificate, and manual configuration is required. See [Server Configuration](#server-configuration) for more details.
 
-### Systemd
+**Systemd**
 
 The installation script expects an environment running Systemd and as such will attempt to install a service unit file. [NATS installation](https://docs.nats.io/running-a-nats-service/introduction/installation) guide covers installation of NATS on other operating systems without Systemd.
 
@@ -41,16 +35,16 @@ The installation script expects an environment running Systemd and as such will 
 This chapter assumes the installation was performed using the provided installation script.
 Installation methods that are not compatible with the installation script may require additional steps that are outside the scope of this guide. Refer to NATS documentation for in-depth information about server configuration.
 
-Quick facts about the configuration:
+Quick facts about the default configuration:
 
 * Configuration is stored in `/etc/nats-server.conf`.
 * Server data are stored in `/opt/nats`.
+* Server is running as `nats` user.
 * Server is listening on `4222/tcp` and `8443/tcp`.
-* Server is using JWT-based authentication/authorization.
 
 ### Authentication
 
-JWT-based authentication/authorization uses a hierarchy of entities to establish a chain of trust. Each entity is represented by a JWT and a cryptographic key pair.
+JWT-based authentication/authorization uses a hierarchy of entities to establish a chain of trust. Each entity is represented by a JWT and a cryptographic key pair used for signing.
 
 * **Operators** are responsible for running NATS servers. Operators set limits on what Accounts can do and are responsible for issuing Account JWTs.
 
@@ -117,4 +111,4 @@ Restart the server to apply the changes:
 
 ## Support
 
-Reach out to us at **hello@foohq.io** if you need help with Foojank. For bugs and feature requests please [open an issue](https://github.com/fooHQ/foojank/issues) or join a [discussion](https://github.com/fooHQ/foojank/discussions) on GitHub.
+Reach us at **hello@foohq.io** if you need help with Foojank. For bugs and feature requests, please [open an issue](https://github.com/fooHQ/foojank/issues) or join a [discussion](https://github.com/fooHQ/foojank/discussions) on GitHub.
