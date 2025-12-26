@@ -4,7 +4,6 @@ Foojank leverages the NATS features to offer:
 
 * Synchronous or asynchronous communication with Agents over TCP or WebSockets.
 * Server-based storage for file sharing and data exfiltration.
-* JWT-based authentication and authorization.
 * Full observability.
 * Extensibility.
 
@@ -28,7 +27,7 @@ The installation script is not going to generate a TLS certificate, and manual c
 
 **Systemd**
 
-The installation script expects an environment running Systemd and as such will attempt to install a service unit file. [NATS installation](https://docs.nats.io/running-a-nats-service/introduction/installation) guide covers installation of NATS on other operating systems without Systemd.
+The installation script expects an environment running Systemd, and as such it will attempt to install a service unit file. [NATS installation](https://docs.nats.io/running-a-nats-service/introduction/installation) guide covers installation of NATS on other operating systems without Systemd.
 
 ## Server Configuration
 
@@ -60,7 +59,7 @@ How to generate a new Account and import it is described in [Account Configurati
 By default, the server requires a TLS certificate to be configured. The installation script does not generate a TLS certificate, and manual configuration is required.
 This guide covers a configuration using a self-signed certificate.
 
-Although NATS is compatible with Automatic Certificate Management Environment (ACME) clients, it requires additional steps that are not covered in this guide. [Reach out](#support) to us if you need help with ACME configuration.
+Although NATS is compatible with Automatic Certificate Management Environment (ACME) clients, it requires additional steps that are not covered in this guide. [Reach out](#support) if you need help with ACME configuration.
 
 To create a new self-signed certificate, create a file `san.cnf` with the following configuration:
 
@@ -107,6 +106,54 @@ Restart the server to apply the changes:
 
 ```
 # systemctl restart nats-server
+```
+
+## Client Installation
+
+It is recommended to install the client on the end devices and not on the server. This way, Accounts and User keys are not exposed to the server.
+
+To install the client, run the installation script:
+
+```
+$ curl -fsSL https://github.com/fooHQ/foojank/releases/latest/download/client.sh | sh
+```
+
+The installation script is going to install:
+
+* The latest version of Foojank client.
+* Nix package manager.
+* The latest version of [Devbox](https://www.jetify.com/devbox).
+
+Devbox is used to manage dependencies and to interact with Agent development environments.
+Devbox uses Nix package manager. All dependencies are installed in the Nix store and do
+not conflict with already installed software. Multiple versions of the same dependency can be installed as well.
+**Unfortunately, Nix package manager does not support Windows at this time, which makes the client incompatible with Windows.**
+
+Once the installation is complete, run `foojank` to start the client:
+
+```
+$ foojank
+NAME:
+   foojank - Command and control framework
+
+USAGE:
+   foojank [global options] [command [command options]]
+
+VERSION:
+   0.4.2
+
+COMMANDS:
+   account  Manage accounts
+   agent    Manage agents
+   config   Manage configuration
+   job      Manage jobs
+   profile  Manage profiles
+   storage  Manage storage
+
+GLOBAL OPTIONS:
+   --no-color     disable color output
+   --help, -h     show help
+   --version, -v  print the version
 ```
 
 ## Support
