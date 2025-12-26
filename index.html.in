@@ -35,7 +35,7 @@
         }
 
         h2:before{
-            content: counter(h2counter) ".\00a0\00a0";
+            content: counter(h2counter) "\00a0\00a0";
         }
 
         h3:before{
