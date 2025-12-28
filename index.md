@@ -27,6 +27,8 @@ A complete Quick Start video is available below, showing every step and its expe
             preload: true,
             poster: "npt:0:36",
             theme: "dracula",
+            fit: "none",
+            terminalFontSize: "0.95rem",
         },
     );
 </script>
