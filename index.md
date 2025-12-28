@@ -14,7 +14,7 @@ Foojank is distributed under the [Apache License Version 2.0](https://github.com
 ## Quick Start
 
 This guide walks you through a minimal, local setup of Foojank on a single machine.
-Watch a complete walkthrough of the quick start guide.
+A complete Quick Start video is available below, showing every step and its expected output.
 
 <pre id="quick-start-asciicast"></pre>
 
