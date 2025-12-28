@@ -13,7 +13,23 @@ Foojank is distributed under the [Apache License Version 2.0](https://github.com
 
 ## Quick Start
 
-This section walks you through a minimal, local setup of Foojank.
+This guide walks you through a minimal, local setup of Foojank on a single machine.
+Watch a complete walkthrough of the quick start guide.
+
+<pre id="quick-start-asciicast"></pre>
+
+<script>
+    AsciinemaPlayer.create(
+        "/recordings/quick-start.cast",
+        document.getElementById('quick-start-asciicast'),
+        {
+            speed: 1.5,
+            preload: true,
+            poster: "npt:0:10",
+            theme: "dracula",
+        },
+    );
+</script>
 
 ### Install the server
 
@@ -23,7 +39,6 @@ $ curl -fsSL https://github.com/fooHQ/foojank/releases/latest/download/server.sh
 
 At the end of the installation, the script reports whether the server started successfully. Review the output carefully
 and resolve any reported errors before continuing.
-
 
 ### Install the client
 
@@ -161,7 +176,7 @@ $ foojank agent build --profile vessel-linux-amd64 --feature dev
 Start the Agent binary:
 
 ```
-./immune-heron
+$ ./immune-heron
 ```
 
 Once started, the Agent connects to the server.
