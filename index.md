@@ -25,7 +25,7 @@ A complete Quick Start video is available below, showing every step and its expe
         {
             speed: 1.5,
             preload: true,
-            poster: "npt:0:10",
+            poster: "npt:0:36",
             theme: "dracula",
         },
     );
