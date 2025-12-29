@@ -5,7 +5,7 @@
     <title>Foojank | C2 Framework</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
-          content="Foojank is a prototype command-and-control (C2) framework.">
+          content="Foojank is an open-source command-and-control (C2) framework built on NATS, designed for ethical hackers conducting red team and purple team engagements. It provides a scalable, observable, and extensible C2 platform for adversary simulation and security testing.">
     <link rel="canonical" href="https://foojank.com/">
     <link rel="mask-icon" href="/images/fu.svg" color="#FE0000">
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
