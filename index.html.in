@@ -34,6 +34,11 @@
 
         h3 {
             counter-increment: h3counter;
+            counter-reset: h4counter;
+        }
+
+        h4 {
+            counter-increment: h4counter;
         }
 
         h2:before{
@@ -42,6 +47,10 @@
 
         h3:before{
             content: counter(h2counter) "." counter(h3counter) "\00a0\00a0";
+        }
+
+        h4:before{
+            content: counter(h2counter) "." counter(h3counter) "." counter(h4counter) "\00a0\00a0";
         }
 
         img {
