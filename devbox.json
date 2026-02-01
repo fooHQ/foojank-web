@@ -9,8 +9,7 @@
     ],
     "scripts": {
       "build": [
-        "pandoc -o static/index.html --template index.html.in index.md",
-        "mkdir -p static/docs && pandoc -o static/docs/index.html --template index.html.in documentation.md"
+        "bash devbox.sh"
       ]
     }
   }
