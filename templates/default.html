@@ -127,13 +127,21 @@
         }
 
         .menu {
-            font-size:2rem;
+            font-size:2.3rem;
             font-weight:bolder;
+        }
+
+        .menu::before {
+            content:"☰";
         }
 
         #nav-toggle, .menu {
             display: none;
             margin-left:auto;
+        }
+
+        #nav-toggle:checked + .menu::before {
+            content:"✕";
         }
 
         /* Mobile */
@@ -153,6 +161,7 @@
 
             #nav-toggle:checked ~ nav {
                 display: flex;
+                margin-top:1rem;
             }
         }
 
@@ -195,7 +204,7 @@
         </a>
 
         <input type="checkbox" id="nav-toggle" />
-        <label for="nav-toggle" class="menu">☰</label>
+        <label for="nav-toggle" class="menu"></label>
 
         <nav>
             <a href="#support">Support</a>
