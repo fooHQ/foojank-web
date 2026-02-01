@@ -88,19 +88,72 @@
             font-size: 0.95rem;
         }
 
-        .title {
-            padding:0;
-            display: flex;
-            align-items: center;
-            gap: 1.20rem;
-        }
-
         .logo {
             padding:0;
             object-fit: contain;
             flex-shrink: 0;
             width:3.85rem;
             color: #FE0000;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-top:2rem;
+            margin-bottom:2rem;
+            flex-wrap:wrap;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            text-decoration: none;
+            font-size: 2.5rem;
+            font-weight: bolder;
+            color: inherit;
+        }
+
+        nav {
+            display: flex;
+            gap: 1rem;
+            margin-left: auto;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-weight: bolder;
+        }
+
+        .menu {
+            font-size:2rem;
+            font-weight:bolder;
+        }
+
+        #nav-toggle, .menu {
+            display: none;
+            margin-left:auto;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .menu {
+                display: block;
+                cursor: pointer;
+                order:1;
+            }
+
+            nav {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                order:2;
+            }
+
+            #nav-toggle:checked ~ nav {
+                display: flex;
+            }
         }
 
         a {
@@ -135,12 +188,19 @@
     </style>
 </head>
 <body>
-    <h1 class="title">
-        <a href="/"><img src="/images/fu.svg" alt="Logo" class="logo"></a>
-        <span>Foojank</span>
-    </h1>
+    <header>
+        <a href="/" class="brand">
+            <img src="./images/fu.svg" alt="Foojank logo" class="logo" />
+            <span>Foojank</span>
+        </a>
 
-    $toc$
+        <input type="checkbox" id="nav-toggle" />
+        <label for="nav-toggle" class="menu">☰</label>
+
+        <nav>
+            <a href="#support">Support</a>
+        </nav>
+    </header>
 
     <main>
     $body$
