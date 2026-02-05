@@ -1,8 +1,6 @@
-Foojank is an open-source command-and-control (C2) framework built on NATS, designed for ethical hackers conducting red
+Foojank is an open-source command-and-control (C2) framework designed for ethical hackers conducting red
 team and purple team engagements. It provides a scalable, observable, and extensible C2 platform for adversary
 simulation and security testing.
-
-Foojank is distributed under the [Apache License Version 2.0](https://github.com/fooHQ/foojank/blob/main/LICENSE).
 
 **Features**
 
