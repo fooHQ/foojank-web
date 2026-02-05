@@ -93,7 +93,12 @@
             object-fit: contain;
             flex-shrink: 0;
             width:3.85rem;
-            color: #FE0000;
+        }
+
+        .github {
+            padding:0;
+            object-fit: contain;
+            width:1.5rem;
         }
 
         header {
@@ -124,6 +129,7 @@
         nav a {
             text-decoration: none;
             font-weight: bolder;
+            color: inherit;
         }
 
         .menu {
@@ -199,7 +205,7 @@
 <body>
     <header>
         <a href="/" class="brand">
-            <img src="/images/fu.svg" alt="Foojank logo" class="logo" />
+            <img src="/images/fu.svg" alt="Logo" class="logo" />
             <span>Foojank</span>
         </a>
 
@@ -208,6 +214,7 @@
 
         <nav>
             <a href="/#support">Support</a>
+            <a href="https://github.com/fooHQ/foojank" title="View on GitHub"><img src="./images/github.svg" alt="GitHub" class="github" /></a>
         </nav>
     </header>
 
