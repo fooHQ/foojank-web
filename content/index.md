@@ -104,7 +104,6 @@ $ nsc import account --file /tmp/account.jwt
 Successful import results in output similar to the following:
 
 ```
-[WARN] validation resulted in: self-signed account JWTs shouldn't contain operator limits
 [ OK ] account eminent_oryx was successfully imported
 1 job succeeded - 1 have warnings
 ```
