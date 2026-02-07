@@ -4,9 +4,10 @@ simulation and security testing.
 
 **Features**
 
-* Customizable C2 transport over TCP and WebSockets.
+* Collaborative, multi-user support.
+* Customizable C2 protocol using [Cap'n Proto](https://capnproto.org/).
+* C2 communication over TCP, WebSockets, and with third-party SaaS providers using bridges.
 * Built-in file storage for payload distribution and data exfiltration.
-* Extensible support for custom and third-party agents.
 * Observability, including visibility into agent activity and C2 messaging.
 
 ## Quick Start
@@ -192,6 +193,6 @@ At this point, the Agent is ready to receive commands.
 
 ## Support
 
-If you need help with Foojank, contact us at **hello@foohq.io**.
+If you need help with Foojank, contact us at **hello@foohq.io** or join our support group on [Signal](https://signal.group/#CjQKICC4bpzIhP0BSHqkdHmZ98HVkmxMruP3haoCyn9PaxtlEhD1QVtI0A2w3kti35h03s1b).
 
 For bugs and feature requests, please [open an issue](https://github.com/fooHQ/foojank/issues) or start a [discussion](https://github.com/fooHQ/foojank/discussions) on GitHub.
