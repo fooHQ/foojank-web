@@ -24,7 +24,7 @@ A complete Quick Start video is available below, showing every step and its expe
     );
 </script>
 
-### Install the server
+## Install the server
 
 ```
 $ curl -fsSL https://github.com/fooHQ/foojank/releases/latest/download/server.sh | bash
@@ -33,7 +33,7 @@ $ curl -fsSL https://github.com/fooHQ/foojank/releases/latest/download/server.sh
 At the end of the installation, the script reports whether the server started successfully. Review the output carefully
 and resolve any reported errors before continuing.
 
-### Install the client
+## Install the client
 
 Download and run the client installation script:
 
@@ -73,7 +73,7 @@ GLOBAL OPTIONS:
    --version, -v  print the version
 ```
 
-### Create and configure an Account
+## Create and configure an Account
 
 Create a new Account:
 
@@ -115,7 +115,7 @@ A successful push confirms that the Account is now available to the NATS server:
               [ OK ] pushed to a total of 1 nats-server
 ```
 
-### Initialize client configuration
+## Initialize client configuration
 
 Initialize client configuration in the current directory (or specify a different directory using `--config-dir`):
 
@@ -137,7 +137,7 @@ $ foojank agent list
 
 Since no Agents are running yet, the list will be empty.
 
-### Build an Agent
+## Build an Agent
 
 Clone a repository containing an Agent development environment, such as [Vessel](https://github.com/foohq/vessel):
 
@@ -163,7 +163,7 @@ Select a profile and build an Agent. To enable development features, add `--feat
 $ foojank agent build --profile vessel-linux-amd64 --feature dev
 ```
 
-### Run the Agent
+## Run the Agent
 
 Start the Agent binary:
 
