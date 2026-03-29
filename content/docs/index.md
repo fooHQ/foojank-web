@@ -1,0 +1,29 @@
+---
+title: Documentation
+---
+# Documentation
+
+This is the central hub for all Foojank documentation. It covers everything needed to build, deploy, and operate within the Foojank C2 framework.
+
+## Guides
+
+Step-by-step guides for building and integrating with Foojank.
+
+- [Agent Developer Guide](./developer) — A comprehensive guide to building custom agents that connect to the Foojank C2 framework over NATS. Topics include the protocol specification, message types, NATS subjects, JetStream streams and consumers, JWT authentication, the build system, and example implementations in Go, Java, C++, and Rust.
+
+## API Reference
+
+Detailed reference documentation for Foojank's interfaces and schemas.
+
+- [Protocol Schema (`agent.capnp`)](https://github.com/fooHQ/foojank-proto/blob/main/schema/agent.capnp) — The Cap'n Proto schema that defines all message types and NATS subject templates used by the agent protocol.
+
+## CLI Reference
+
+Documentation for the Foojank command-line client.
+
+> WORK IN PROGRESS!
+
+## Additional Resources
+
+- [NATS Documentation](https://docs.nats.io/) — Official documentation for the NATS messaging system, including JetStream, authentication, and client libraries.
+- [Cap'n Proto Documentation](https://capnproto.org/) — Official documentation for the Cap'n Proto serialization format.
