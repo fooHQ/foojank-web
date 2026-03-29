@@ -11,17 +11,17 @@ Step-by-step guides for building and integrating with Foojank.
 
 - [Agent Developer Guide](./developer) — Build and integrate custom agents with the Foojank C2 framework. This guide walks you through the messaging protocol, authentication, command execution, and build system — with working examples in Go, Java, C++, and Rust.
 
-## API Reference
-
-Detailed reference documentation for Foojank's interfaces and schemas.
-
-- [Protocol Schema (`agent.capnp`)](https://github.com/fooHQ/foojank-proto/blob/main/schema/agent.capnp) — The Cap'n Proto schema that defines all message types and NATS subject templates used by the agent protocol.
-
 ## CLI References
 
 Documentation for the Foojank command-line tools.
 
 - [Foojank Client](./cli) — Command-line reference for the Foojank client.
+
+## API Reference
+
+Detailed reference documentation for Foojank's interfaces and schemas.
+
+- [Protocol Schema (`agent.capnp`)](https://github.com/fooHQ/foojank-proto/blob/main/schema/agent.capnp) — The Cap'n Proto schema that defines all message types and NATS subject templates used by the agent protocol.
 
 ## Additional Resources
 
