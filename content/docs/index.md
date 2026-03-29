@@ -10,7 +10,7 @@ This is the central page for all Foojank documentation. It covers everything nee
 
 Step-by-step guides for building and integrating with Foojank.
 
-- [Quick Start Guide](./quick-start) — Build and integrate custom agents with the Foojank C2 framework. This guide walks you through the messaging protocol, authentication, command execution, and build system — with working examples in Go, Java, C++, and Rust.
+- [Quick Start Guide](./quick-start) — A minimal, local setup of Foojank on a single machine.
 - [Agent Developer Guide](./developer) — Build and integrate custom agents with the Foojank C2 framework. This guide walks you through the messaging protocol, authentication, command execution, and build system — with working examples in Go, Java, C++, and Rust.
 
 ## CLI References
