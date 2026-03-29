@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>$if(title)$ $title$ | $endif$ Foojank C2 Framework</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#FE0000">
+    <meta name="description" content="$if(description)$ $description$ $else$ Open-source C2 framework built on NATS for red team and purple team engagements. Scalable, observable, and extensible adversary simulation. $endif$">
+    <!-- Open Graph (Facebook, LinkedIn, Instagram, YouTube, etc.) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="$if(title)$ $title$ | $endif$ Foojank C2 Framework">
+    <meta property="og:description" content="$if(description)$ $description$ $else$ Open-source C2 framework built on NATS for red team and purple team engagements. Scalable, observable, and extensible adversary simulation. $endif$">
+    <meta property="og:url" content="https://foojank.com/">
+    <meta property="og:site_name" content="Foojank">
+    <meta property="og:image" content="https://foojank.com/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Foojank C2 Framework — open-source adversary simulation on NATS">
+    <meta property="og:locale" content="en_US">
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="$if(title)$ $title$ | $endif$ Foojank C2 Framework">
+    <meta name="twitter:description" content="$if(description)$ $description$ $else$ Open-source C2 framework built on NATS for red team and purple team engagements. Scalable, observable, and extensible adversary simulation. $endif$">
+    <meta name="twitter:image" content="https://foojank.com/images/og-image.png">
+    <meta name="twitter:image:alt" content="Foojank C2 Framework — open-source adversary simulation on NATS">
+
+    <link rel="canonical" href="https://foojank.com/">
+    <link rel="mask-icon" href="/images/fu.svg" color="#FE0000">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
+    <style>
+        .button {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            border-radius: 20px;
+            background-color: #3B82F6;
+            color: #FFFFFF !important;
+            text-decoration: none;
+            font-weight: bolder;
+            transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+            border: 2px solid #3B82F6;
+            cursor: pointer;
+            margin: 0.5rem;
+        }
+
+        .button:hover {
+            background-color: #60A5FA;
+            border-color: #60A5FA;
+            color: #FFFFFF !important;
+        }
+
+        .button.outline {
+            background-color: transparent;
+            color: #3B82F6 !important;
+        }
+
+        .button.outline:hover {
+            background-color: #3B82F6;
+            color: #FFFFFF !important;
+        }
+
+        .hero {
+            text-align: center;
+            margin-top:4rem;
+            margin-bottom:4rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="/" class="brand">
+            <img src="/images/fu.svg" alt="Logo" class="logo" />
+            <span>Foojank</span>
+        </a>
+
+        <input type="checkbox" id="nav-toggle" />
+        <label for="nav-toggle" class="menu"></label>
+
+        <nav>
+            <a href="/docs/quick-start">Quick Start</a>
+            <a href="/docs/">Documentation</a>
+            <a href="/support/">Support</a>
+            <a href="https://github.com/fooHQ/foojank" title="View on GitHub"><img src="/images/github.svg" alt="GitHub" class="github" /></a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <h1>Open-source C2 framework</h1>
+            <p>Designed for ethical hackers conducting red team and purple team engagements. Extensible. Observable. Scalable.</p>
+            <a href="/docs/quick-start" class="button">Get Started</a>
+            <a href="https://github.com/foohq/foojank" class="button outline">View on GitHub</a>
+        </div>
+
+        $body$
+    </main>
+    <footer>
+        &copy; 2024-2026 <a href="https://foohq.io">fooHQ</a> <span class="block">&#9608;</span>
+    </footer>
+</body>
+</html>
