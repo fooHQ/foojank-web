@@ -9,7 +9,7 @@ This is the central page for all Foojank documentation. It covers everything nee
 
 Step-by-step guides for building and integrating with Foojank.
 
-- [Agent Developer Guide](./developer) — A comprehensive guide to building custom agents that connect to the Foojank C2 framework over NATS. Topics include the protocol specification, message types, NATS subjects, JetStream streams and consumers, JWT authentication, the build system, and example implementations in Go, Java, C++, and Rust.
+- [Agent Developer Guide](./developer) — Build and integrate custom agents with the Foojank C2 framework. This guide walks you through the messaging protocol, authentication, command execution, and build system — with working examples in Go, Java, C++, and Rust.
 
 ## API Reference
 
