@@ -1,5 +1,6 @@
 ---
 title: Documentation
+description: Central page for all Foojank documentation, covering building and operating within the Foojank C2 framework.
 ---
 # Documentation
 
@@ -9,6 +10,7 @@ This is the central page for all Foojank documentation. It covers everything nee
 
 Step-by-step guides for building and integrating with Foojank.
 
+- [Quick Start Guide](./quick-start) — Build and integrate custom agents with the Foojank C2 framework. This guide walks you through the messaging protocol, authentication, command execution, and build system — with working examples in Go, Java, C++, and Rust.
 - [Agent Developer Guide](./developer) — Build and integrate custom agents with the Foojank C2 framework. This guide walks you through the messaging protocol, authentication, command execution, and build system — with working examples in Go, Java, C++, and Rust.
 
 ## CLI References
