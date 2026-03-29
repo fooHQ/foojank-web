@@ -5,7 +5,7 @@
     <title>$if(title)$ $title$ | $endif$ Foojank C2 Framework</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#FE0000">
-    <meta name="description" content="Open-source C2 framework built on NATS for red team and purple team engagements. Scalable, observable, and extensible adversary simulation.">
+    <meta name="description" content="$if(description)$ $description$ $else$ Open-source C2 framework built on NATS for red team and purple team engagements. Scalable, observable, and extensible adversary simulation. $endif$">
     <link rel="canonical" href="https://foojank.com/">
     <link rel="mask-icon" href="/images/fu.svg" color="#FE0000">
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
@@ -17,8 +17,8 @@
 
     <!-- Open Graph (Facebook, LinkedIn, Instagram, YouTube, etc.) -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Foojank C2 Framework">
-    <meta property="og:description" content="Open-source C2 framework built on NATS for red team and purple team engagements. Scalable, observable, and extensible adversary simulation.">
+    <meta property="og:title" content="$if(title)$ $title$ | $endif$ Foojank C2 Framework">
+    <meta property="og:description" content="$if(description)$ $description$ $else$ Open-source C2 framework built on NATS for red team and purple team engagements. Scalable, observable, and extensible adversary simulation. $endif$">
     <meta property="og:url" content="https://foojank.com/">
     <meta property="og:site_name" content="Foojank">
     <meta property="og:image" content="https://foojank.com/images/og-image.png">
@@ -29,8 +29,8 @@
 
     <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Foojank C2 Framework">
-    <meta name="twitter:description" content="Open-source C2 framework built on NATS for red team and purple team engagements. Scalable, observable, and extensible adversary simulation.">
+    <meta name="twitter:title" content="$if(title)$ $title$ | $endif$ Foojank C2 Framework">
+    <meta name="twitter:description" content="$if(description)$ $description$ $else$ Open-source C2 framework built on NATS for red team and purple team engagements. Scalable, observable, and extensible adversary simulation. $endif$">
     <meta name="twitter:image" content="https://foojank.com/images/og-image.png">
     <meta name="twitter:image:alt" content="Foojank C2 Framework — open-source adversary simulation on NATS">
     <style>
