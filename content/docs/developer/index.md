@@ -1,5 +1,6 @@
 ---
 title: Agent Developer Guide
+description: "Build and integrate custom agents with the Foojank C2 framework. This guide walks you through the messaging protocol, authentication, command execution, and build system — with working examples in Go, Java, C++, and Rust."
 ---
 # Agent Developer Guide
 
