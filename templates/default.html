@@ -20,7 +20,7 @@
         }
 
         body {
-            max-width: min(70ch, 100% - 4rem);
+            max-width: min(80ch, 100% - 4rem);
             margin-inline: auto;
             font-family: system-ui;
             font-size: 1.25rem;
@@ -42,15 +42,15 @@
         }
 
         h2:before{
-            content: counter(h2counter) "\00a0\00a0";
+            content: counter(h2counter) "\00a0\00a0\00a0\00a0\00a0";
         }
 
         h3:before{
-            content: counter(h2counter) "." counter(h3counter) "\00a0\00a0";
+            content: counter(h2counter) "." counter(h3counter) "\00a0\00a0\00a0\00a0\00a0";
         }
 
         h4:before{
-            content: counter(h2counter) "." counter(h3counter) "." counter(h4counter) "\00a0\00a0";
+            content: counter(h2counter) "." counter(h3counter) "." counter(h4counter) "\00a0\00a0\00a0\00a0\00a0";
         }
 
         img {
@@ -79,7 +79,7 @@
         }
 
         code {
-            font-size: 0.95rem;
+            font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
         }
 
         footer {
@@ -180,7 +180,7 @@
         }
 
         .block {
-            font-family: ui-monospace, monospace;
+            font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
             font-size:1rem;
             animation: blink 1.5s steps(1, start) infinite;
         }
@@ -200,6 +200,53 @@
                 opacity: 0;
             }
         }
+
+        table {
+            width: 100%;
+            border-spacing: 0;
+        }
+
+        table th,
+        table td {
+            border-bottom: 1px solid light-dark(#e5e7eb, #374151);
+            border-right: 1px solid light-dark(#e5e7eb, #374151);
+            padding: 1.25rem;
+        }
+
+        table th {
+            text-align: left;
+            font-weight: bold;
+        }
+
+        /* top edge */
+        table tr:first-child th,
+        table tr:first-child td {
+            border-top: 1px solid light-dark(#e5e7eb, #374151);
+        }
+
+        /* left edge */
+        table th:first-child,
+        table td:first-child {
+            border-left: 1px solid light-dark(#e5e7eb, #374151);
+        }
+
+        /* corners - top */
+        table tr:first-child th:first-child {
+            border-top-left-radius: 20px;
+        }
+
+        table tr:first-child th:last-child {
+            border-top-right-radius: 20px;
+        }
+
+        /* corners - bottom */
+        table tr:last-child td:first-child {
+            border-bottom-left-radius: 20px;
+        }
+
+        table tr:last-child td:last-child {
+            border-bottom-right-radius: 20px;
+        }
     </style>
 </head>
 <body>
@@ -213,6 +260,7 @@
         <label for="nav-toggle" class="menu"></label>
 
         <nav>
+            <a href="/documentation">Documentation</a>
             <a href="/#support">Support</a>
             <a href="https://github.com/fooHQ/foojank" title="View on GitHub"><img src="./images/github.svg" alt="GitHub" class="github" /></a>
         </nav>
