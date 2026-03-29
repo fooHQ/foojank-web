@@ -3,7 +3,7 @@ title: Documentation
 ---
 # Documentation
 
-This is the central hub for all Foojank documentation. It covers everything needed to build, deploy, and operate within the Foojank C2 framework.
+This is the central page for all Foojank documentation. It covers everything needed to build and operate within the Foojank C2 framework.
 
 ## Guides
 
