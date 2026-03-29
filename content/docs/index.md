@@ -17,11 +17,11 @@ Detailed reference documentation for Foojank's interfaces and schemas.
 
 - [Protocol Schema (`agent.capnp`)](https://github.com/fooHQ/foojank-proto/blob/main/schema/agent.capnp) — The Cap'n Proto schema that defines all message types and NATS subject templates used by the agent protocol.
 
-## CLI Reference
+## CLI References
 
-Documentation for the Foojank command-line client.
+Documentation for the Foojank command-line tools.
 
-> WORK IN PROGRESS!
+- [Foojank Client](./cli) — Command-line reference for the Foojank client.
 
 ## Additional Resources
 
