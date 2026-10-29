@@ -1,0 +1,52 @@
+:root[data-theme="foojank"] {
+    --color-link: #3B82F6;
+    --color-visited-link: #3B82F6;
+    --body-background: #1E1E1E;
+    --body-font-color: #E5E7EB;
+    --icon-filter: brightness(0) invert(1);
+}
+
+.markdown pre {
+    background-color: #1F2937;
+    color: #E5E7EB;
+    border:0;
+}
+
+.markdown code {
+    background-color: #1F2937;
+    color: #E5E7EB;
+    border:0;
+}
+
+.book-brand {
+    font-weight: bolder;
+}
+
+#book-search-input {
+    background-color: #1F2937;
+    border-color: #1F2937;
+    color: var(--body-font-color);
+}
+
+#book-search-input::placeholder {
+    color: var(--body-font-color);
+}
+
+.book-copyright.justify-center {
+    justify-content: flex-start;
+}
+
+.block {
+    animation: blink 1.5s steps(1, start) infinite;
+}
+
+@keyframes blink {
+    0%,
+    50% {
+        opacity: 1;
+    }
+    50.01%,
+    100% {
+        opacity: 0;
+    }
+}
